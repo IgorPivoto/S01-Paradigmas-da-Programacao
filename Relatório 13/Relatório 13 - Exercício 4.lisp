@@ -24,11 +24,11 @@
         (make-local :nome "Pico dos Ventos"   :elemento :anemo   :dificuldade 1 :recompensa 550.0)))
 
 (defun main ()
-  (format t "~%--- Lista completa (recompensa com bonus) ---~%")
+  (format t "~% Lista completa (recompensa com bonus) ~%")
   (dolist (l *catalogo*)
     (format t "~a: R$ ~a~%" (local-nome l) (bonus l)))
 
-  (format t "~%--- Rota de farm recomendada ---~%")
+  (format t "~% Rota de farm recomendada ~%")
   (dolist (linha (rota-de-farm *catalogo*))
     (format t "~a~%" linha)))
 
